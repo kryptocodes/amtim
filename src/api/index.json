@@ -1,0 +1,26 @@
+[
+    {
+        "id":1,
+        "year":"3",
+        "dept":"CSE-A",
+        "url":"https://amrita.edu.in/sites/default/files/CSE%20TIMETABLE%202020_21_revised_III_A%20%285%29.pdf"
+    },
+    {
+        "id":2,
+        "year":"3",
+        "dept":"CSE-B",
+        "url":"https://amrita.edu.in/sites/default/files/CSE%20TIMETABLE%202020_21_revised_III_B%20%282%29.pdf"
+    },
+    {
+        "id":3,
+        "year":"2",
+        "dept":"CSE-A",
+        "url":"https://amrita.edu.in/sites/default/files/CSE%20TIMETABLE%202020_21_revised_II_A%20%281%29.pdf"
+    },
+    {
+        "id":4,
+        "year":"2",
+        "dept":"CSE-B",
+        "url":"https://amrita.edu.in/sites/default/files/CSE%20TIMETABLE%202020_21_revised_III_B%20%282%29.pdf"
+    }
+]
