@@ -23,3 +23,7 @@ html {
     padding-right: 15px;
     padding-left: 15px;
   }
+
+  .react-responsive-modal-overlay{
+    overflow-x: unset !important;
+  }
