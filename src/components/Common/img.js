@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Loading from './Loading'
 import { Document, Page } from 'react-pdf';
 import 'react-pdf/dist/Page/AnnotationLayer.css';
  
@@ -9,9 +10,9 @@ const App = ({File}) => {
     setNumPages(numPages);
   }
 
-  const Loading = () => (
-    <div className="mt-5">
-      <p className="lead">Loading</p>
+  const loading = () => (
+    <div className="pb-5 pl-5 pr-5">
+    {Loading()}
     </div>
   )
  
@@ -20,7 +21,7 @@ const App = ({File}) => {
       <Document
         file={`https://cors-anywhere.herokuapp.com/${File}`}
         onLoadSuccess={onDocumentLoadSuccess}
-        loading={Loading()}
+        loading={loading()}
         className="img-fluid"
       >
         <Page scale={1.0}  pageNumber={1} />
