@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "amtim",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "an simple webapp to fetch timetable",
   "version": "0.1.0",
   "license": "0BSD",
   "scripts": {
@@ -19,9 +19,11 @@
     "gatsby-cli": "^2.12.87",
     "gatsby-plugin-manifest": "^2.4.23",
     "gatsby-plugin-offline": "^3.2.23",
+    "gatsby-plugin-react-helmet": "^3.3.11",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-firebase-hooks": "^2.2.0",
+    "react-helmet": "^6.1.0",
     "react-loading": "^2.0.3",
     "react-pdf": "^4.2.0",
     "react-responsive-modal": "^5.0.2",

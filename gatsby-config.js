@@ -8,11 +8,12 @@ module.exports = {
         short_name: `amTim`,
         start_url: `/`,
         background_color: `#3498DB`,
-        theme_color: `#25CCF7`,
+        theme_color: `#3498DB`,
         display: `fullscreen`,
         icon: `src/images/icon.png`
       },
     },
-    'gatsby-plugin-offline'
+    'gatsby-plugin-offline',
+    `gatsby-plugin-react-helmet`
   ],
 }

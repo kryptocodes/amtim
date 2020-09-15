@@ -1,4 +1,5 @@
 import React from "react"
+import Tags from "../components/Common/tags"
 import Nav from "../components/Nav"
 import Card from "../components/Card"
 import Footer from "../components/footer"
@@ -13,6 +14,7 @@ import "../styles/global.css"
 const Home = () => {
   return (
     <React.Fragment>
+    {Tags()}
     {Nav()}
     {Card()}
     {Footer()}
