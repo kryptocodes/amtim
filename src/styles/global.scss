@@ -1,3 +1,6 @@
+$button-color: #BB2CD9;
+$dark:#2C2F33;
+
 html {
     position: relative;
     min-height: 100%;
@@ -31,9 +34,31 @@ html {
   body.light-mode {
     background-color: #fff;
     color: #333;
-    transition: background-color 0.3s ease;
+    transition: background-color 1s ease-in-out ;
+
+    .author {
+      background-color: $dark;
+    }
   }
   body.dark-mode {
-    background-color: #1a1919;
-    color: #999;
+    background-color: $dark;
+    color: #fff;
+
+    .card {
+      background-color: #0f4c86;
+    }
+    .btn-info {
+      background-color: #411e8f;
+      border-color: #411e8f;
+    }
+
+    .footer {
+      background-color: $dark;
+    }
+
+    .author {
+      background-color: #411e8f;
+    }
+
+ 
   }

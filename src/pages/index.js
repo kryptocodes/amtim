@@ -5,7 +5,7 @@ import Card from "../components/Card"
 import Footer from "../components/footer"
 import "../styles/bootstrap.min.css"
 import "../styles/fonts.css"
-import "../styles/global.css"
+import "../styles/global.scss"
 
 
 

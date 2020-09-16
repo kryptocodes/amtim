@@ -1,11 +1,11 @@
 import React from 'react'
 import ReactLoading from 'react-loading';
 
-const CSS ={
+const CSS = {
     margin: "auto",
     marginTop: "200px",
     height: "15%",
-    width: "20vh"
+    width: "20vh",
 }
 
 const Loading = () => {
@@ -13,7 +13,7 @@ const Loading = () => {
         <div >
               <ReactLoading 
                     style={CSS}
-                    type={"cubes"} 
+                    type={"bubbles"} 
                     color={"black"} />
         </div>
     )
