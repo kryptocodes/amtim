@@ -1,9 +1,11 @@
 import React from 'react'
+import DarkToggle from './dark'
 
 export default function index() {
     return (
         <div  className="navbar bg-dark">
-            <p style={{fontFamily: "Rock Salt", fontStyle: "cursive", fontSize:"20px"}} className="text-center text-white mx-auto">Time Table</p>
-        </div>
+            <p style={{fontFamily: "Rock Salt", fontStyle: "cursive", fontSize:"20px"}} className="ml-4 mt-2 text-white">Time Table</p>
+            <div className="mr-2">{DarkToggle()}</div>
+         </div>
     )
 }
