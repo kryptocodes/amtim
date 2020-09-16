@@ -15,11 +15,8 @@ const Home = () => {
   return (
     <React.Fragment>
     {Tags()}
-    
-    <div className={"bg-dark"}>
     {Nav()}
     {Card()}
-    </div>
     {Footer()}
   </React.Fragment>
   )
