@@ -31,6 +31,11 @@ html {
     overflow-x: unset !important;
   }
 
+  .react-pdf__Page__canvas{
+    width: 100% !important;
+    height: 100% !important;
+  }
+
   .Class {
     font-family: "Short Stack"; 
     font-style: "cursive"; 
