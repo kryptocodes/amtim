@@ -10,7 +10,7 @@ const CSS = {
 
 const Loading = () => {
     return (
-        <div >
+        <div>
               <ReactLoading 
                     style={CSS}
                     type={"bubbles"} 

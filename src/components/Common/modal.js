@@ -4,7 +4,6 @@ import { Modal } from 'react-responsive-modal';
 import App from './img';
 
 const CSS = {
-  overflowY:"auto",
   width:"100%"
 }
 
