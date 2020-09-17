@@ -3,6 +3,7 @@ import ModalBox from '../Common/modal'
 import firebase from '../../api/config'
 import Loading from '../Common/Loading'
 import Filtered from './filtered'
+import disclaimer from '../Common/disclaimer'
 
 const Card = () => {
     const [Data,setData] = useState([])
@@ -24,19 +25,32 @@ const Card = () => {
         </div>
     )
 
+    const DeptSelector = () => (
+        <div className="d-flex justify-content-center mt-2">
+        <select className="form-control-l" id="select">
+                <option value="value">value</option>
+                <option value="hello">hello</option>
+                <option value="hello">hello</option>
+                <option value="hello">hello</option>
+            </select>
+        </div>
+    )
+
     return (
         <React.Fragment>
         {loading ? Loading()  :
         <React.Fragment>
-        
         {filter ? Filtered() : 
-        <div className="row container mx-auto mt-2 pb-5 d-flex justify-content-center">
-        {Data && Data.map((dept) => (
+        <div className="row container mx-auto mt-2 d-flex justify-content-center">
+        {Data && Data.map((dept,key) => (
         <div className="col-md-3 mt-5 mr-2 rounded">
-        <div className="card">
+        <div key={key} className="card">
             <span className="card-body">
-            <strong>Year:<p className="lead">{dept.year}</p></strong>
-            <p style={{fontFamily: "Short Stack", fontStyle: "cursive", fontSize:"25px"}} className="text-center">{dept.class}</p>
+            <div>
+            <strong className="float-left">Year<p className="lead text-center">{dept.year}</p></strong>
+            <strong className="float-right">Sem<p className="lead text-center">{dept.sem}</p></strong>
+            </div>
+            <p className="text-center Class"> {dept.class}</p>
             </span>
             <span className="card-footer d-flex justify-content-around">
                 <ModalBox File={dept.url} />
@@ -45,8 +59,10 @@ const Card = () => {
         </div>
         </div>
         ))}
+        {disclaimer()}
         </div>}
         </React.Fragment>}
+      
         </React.Fragment>
     )
 }

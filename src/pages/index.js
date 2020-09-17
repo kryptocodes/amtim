@@ -7,10 +7,6 @@ import "../styles/bootstrap.min.css"
 import "../styles/fonts.css"
 import "../styles/global.scss"
 
-
-
-
-
 const Home = () => {
   return (
     <React.Fragment>

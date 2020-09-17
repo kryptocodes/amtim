@@ -3,12 +3,12 @@ import React from 'react'
 
 const Footer = () => {
     return (
-        <footer className="footer">
-        <div className="container justify-content-center d-flex">
+        <footer className="footer row mx-auto">
+        <div className="col-md justify-content-center d-flex">
           <span>Made with <img src="https://img.icons8.com/bubbles/50/000000/kawaii-coffee.png"/></span>
           </div>
-          <div className="text-center author">
-          <a style={{textDecoration:"none",fontFamily:"cursive"}} className="text-white" href="https://kryptocodes.github.io">Srivatsan</a>
+          <div className="col-md d-flex justify-content-center author">
+          <a style={{textDecoration:"none"}} className="text-white lead" href="https://kryptocodes.github.io">Srivatsan</a>
           </div>
       </footer>
     )
