@@ -26,6 +26,7 @@ const App = ({File}) => {
       >
         <Page scale={1.0}  pageNumber={1} />
       </Document>
+      <p style={{"color":"black"}}><strong>Note:</strong>Initial pdf.js loading would be slow due to cpu limitations</p>
     </div>
   );
 }
