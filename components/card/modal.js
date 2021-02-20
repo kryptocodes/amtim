@@ -1,7 +1,6 @@
 import React,{ useState } from 'react';
-import 'react-responsive-modal/styles.css';
 import { Modal } from 'react-responsive-modal';
-import App from './img';
+import Img from './img'
 
 const CSS = {
   width:"100%"
@@ -14,7 +13,7 @@ const ModalBox = ({File}) => {
         <button className="btn btn-warning" style={{backgroundColor:"#F3B63A"}} onClick={() => setOpen(true)}>View</button>
         <Modal styles={{overflowY:"unset !important"}}  open={open}  onClose={() => setOpen(false)} center>
           <div>
-          {App({File:File})}
+          {Img({File:File})}
           </div>
         </Modal>
       </div>
