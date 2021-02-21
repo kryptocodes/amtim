@@ -1,3 +1,4 @@
+@import url('https://cdn.staticaly.com/gh/hung1001/font-awesome-pro/8af0edd/css/all.css');
 html,
 body {
   padding: 0;
@@ -13,4 +14,9 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.react-pdf__Page__canvas{
+  width: 100% !important;
+  height: 100% !important;
 }
