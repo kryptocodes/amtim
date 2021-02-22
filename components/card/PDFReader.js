@@ -15,12 +15,8 @@ const App = ({File}) => {
     <div className="img-fluid">
     <Document
     file={{ url: File}}
-    onLoadError={e =>
-        console.log("Error while loading document! " + e.message)
-      }
-      onSourceError={e =>
-        console.log("Error while loading document! " + e.message)
-      }
+    className="img-fluid"
+
   >
     <Page pageNumber={1} />
   </Document>

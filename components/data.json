@@ -1,29 +1,51 @@
 [{
+  "dept":"CSE",
+  "sem":8,
+  "uri":"PDF/S8_CSE.pdf"
+},
+  {
     "dept":"CSE",
     "sem":6,
     "sec":"A",
-    "uri":"/S6_CSE.pdf"
+    "uri":"PDF/S6_CSE_A.pdf"
   },
   {
     "dept":"CSE",
     "sem":6,
     "sec":"B",
-    "uri":"https://amrita.edu.in/sites/default/files/S6_CSE-A.pdf"
+    "uri":"PDF/S6_CSE_B.pdf"
   },
   {
     "dept":"CSE",
     "sem":4,
     "sec":"A",
-    "uri":"https://amrita.edu.in/sites/default/files/S6_CSE-A.pdf"
+    "uri":"PDF/S4_CSE_A.pdf"
   },
   {
     "dept":"CSE",
     "sem":4,
     "sec":"B",
-    "uri":"https://amrita.edu.in/sites/default/files/S6_CSE-B.pdf"
+    "uri":"PDF/S4_CSE_B.pdf"
+  },
+  {
+    "dept":"CSE",
+    "sem":1,
+    "sec":"A",
+    "uri":"PDF/S1_CSE_A.pdf"
+  },
+  {
+    "dept":"CSE",
+    "sem":1,
+    "sec":"B",
+    "uri":"PDF/S1_CSE_B.pdf"
+  },
+  {
+    "dept":"ME",
+    "sem":6,
+    "uri":"PDF/S6_ME.pdf"
   },
   {
     "dept":"ME",
     "sem":4,
-    "uri":"https://amrita.edu.in/sites/default/files/S6_CSE-B.pdf"
+    "uri":"PDF/S4_ME.pdf"
   }]

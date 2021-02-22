@@ -103,7 +103,7 @@ a {
     left: 0px;
     opacity: 1;
     transition: all 0.5s ease;
-    z-index: 1;
+    z-index: 999;
     background-color:rgba(0, 0, 0, 0.75);
   }
   .nav-links {

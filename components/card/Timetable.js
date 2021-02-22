@@ -9,7 +9,6 @@ const Timetable = () => {
     const [Semester,setSemester] = useState({})
     const [Sec,setSec] = useState({})
 
-
 const options = [{
   value:"CSE",label:"CSE"
 },
@@ -26,6 +25,8 @@ value:"EEE",label:"EEE"
 }]
 
 const sem = [{
+  value:8,label:8
+},{
   value:6,label:6
 },
 {
@@ -44,14 +45,15 @@ value:"B",label:"B"
 const selectStyles = { menu: styles => ({ ...styles, zIndex: 999 }) };
 
 const Filter = selected !== "CSE" ?  Data.filter(item => item.dept === selected && item.sem == Semester)
-                : Data.filter(item => item.dept === selected && item.sem == Semester && item.sec === Sec) ;
+                : Semester === 8 ? Data.filter(item => item.dept === selected && item.sem == Semester)  : Data.filter(item => item.dept === selected && item.sem == Semester && item.sec === Sec) ;
 const Value = Filter.map((val) => val.uri)
 
-console.log(Filter)
     return (
       <Style>
+        <div className="mx-auto container p-5">
         <div>
-        <Select 
+        <h5>Select Dept</h5>
+        <Select
         id="dept"
         value={selected.value}
         isSearchable={false}
@@ -59,6 +61,9 @@ console.log(Filter)
         styles={selectStyles}
         options={options} 
        />
+       </div>
+       <div>
+       <h5>Select Semester</h5>
        <Select 
         id="sem"
         value={Semester.value}
@@ -67,7 +72,10 @@ console.log(Filter)
         onChange={v => setSemester(v.value)}  
         options={sem} 
        />
-       {selected === "CSE" ? 
+       </div>
+       {(selected === "CSE" && Semester !== 8) ?
+       <div>
+       <h5>Select Section</h5>
        <Select 
        id="sec"
        value={Sec.value}
@@ -75,13 +83,11 @@ console.log(Filter)
        styles={selectStyles}
        onChange={v => setSec(v.value)}  
        options={sec} 
-      />: false }
+      /></div> : false }
         
         </div>
         <div>
-          <a className="btn41-43 btn-42" href={Value}>View</a>
-          <a className="btn41-43 btn-42" href={Value}>Download</a>
-          <ModalBox File={Value}/>
+        <ModalBox File={Value}/>
         </div>
         </Style>
     )
@@ -89,41 +95,9 @@ console.log(Filter)
 
 
 const Style = styled.div`
-.btn41-43 {
-  padding: 10px 25px;
-  font-weight: 500;
-  background: black;
-  outline: none !important;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  position: relative;
-  display: inline-block;
-}
-.btn-42 {
-  border: 2px solid rgb(255, 255, 255);
-  z-index: 1;
-  color: white;
-}
-.btn-42:after {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-  background: rgb(255, 255, 255);
-  transition: all 0.3s ease;
-}
-.btn-42:hover {
-  color: rgb(0, 0, 0);
-}
-.btn-42:hover:after {
-  top: 0;
-  height: 100%;
-}
-.btn-42:active {
-  top: 2px;
+h5 {
+  padding-top:2rem;
+  text-align: center;
 }
 `
 
