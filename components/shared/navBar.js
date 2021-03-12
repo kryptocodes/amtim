@@ -6,9 +6,17 @@ import { useRouter } from 'next/router'
 
 const LinkToPage = [
   {
+    href:"/",
+    name:"TimeTable",
+  },
+  {
     href:"/about",
     name:"About",
   },
+  {
+    href:"/events",
+    name:"Events",
+  }
 ]
 
 const currentTab = (path) => {
@@ -42,8 +50,8 @@ const NavBar = () => {
         </div>
         <ul className={click ? 'nav-menu active' : 'nav-menu'}>
 
-        {LinkToPage.map((value) => 
-          <li className='nav-item'>
+        {LinkToPage.map((value,i) => 
+          <li className='nav-item' key={i}>
             <NextLink href={value.href}>
               <a style={currentTab(value.href)} className='nav-links' onClick={() => setClick(false)}>
               {value.name}
@@ -114,7 +122,7 @@ a {
     color:white;
   }
   .nav-links:hover {
-    color: #F3B431;
+    text-decoration: none;
   }
   .navbar-logo {
     position: absolute;

@@ -11,14 +11,15 @@ const DownloadLink = ({File}) => {
   document.location.href = File
 }
 
+
 const ModalBox = ({File}) => {
   const [open,setOpen] = useState(false)
     return (
       <Style>
       <ToastContainer position="bottom-center"/>
       <div className="mx-auto container d-flex justify-content-center align-content-center">
-        <button className="btn41-43 btn-42"  onClick={() => File.length !== 0 ? setOpen(true) : toast.error("Select all box")}>View</button>
-        <button className="btn41-43 btn-42" onClick={() => File.length !== 0 ? DownloadLink({File}) : toast.error("Select all box")}>Download</button>
+        <button className="btn41-43 btn-42"  onClick={() => File.length === 0 ? toast.error("Select all box")  : File == "No Data" ? toast.warning("Not Available") : setOpen(true)}>View</button>
+        <button className="btn41-43 btn-42" onClick={() => File.length === 0 ? toast.error("Select all box")  : File == "No Data" ? toast.warning("Not Available") :  DownloadLink({File})}>Download</button>
         <Modal styles={{overflowY:"unset !important"}}  open={open}  onClose={() => setOpen(false)} center>
           <div>
             <App File={File}/>

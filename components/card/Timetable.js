@@ -45,8 +45,9 @@ value:"B",label:"B"
 const selectStyles = { menu: styles => ({ ...styles, zIndex: 999 }) };
 
 const Filter = selected !== "CSE" ?  Data.filter(item => item.dept === selected && item.sem == Semester)
-                : Semester === 8 ? Data.filter(item => item.dept === selected && item.sem == Semester)  : Data.filter(item => item.dept === selected && item.sem == Semester && item.sec === Sec) ;
+                : (Semester == 8 || Semester == 6) ? Data.filter(item => item.dept === selected && item.sem == Semester)  : Data.filter(item => item.dept === selected && item.sem == Semester && item.sec === Sec) ;
 const Value = Filter.map((val) => val.uri)
+console.log(Value)
 
     return (
       <Style>
@@ -73,7 +74,7 @@ const Value = Filter.map((val) => val.uri)
         options={sem} 
        />
        </div>
-       {(selected === "CSE" && Semester !== 8) ?
+       {(selected === "CSE" && (Semester != 8 && Semester!= 6 ) ) ?
        <div>
        <h5>Select Section</h5>
        <Select 

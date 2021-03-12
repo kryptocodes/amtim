@@ -1,51 +1,111 @@
-[{
-  "dept":"CSE",
-  "sem":8,
-  "uri":"PDF/S8_CSE.pdf"
-},
-  {
-    "dept":"CSE",
-    "sem":6,
-    "sec":"A",
-    "uri":"PDF/S6_CSE_A.pdf"
-  },
-  {
-    "dept":"CSE",
-    "sem":6,
-    "sec":"B",
-    "uri":"PDF/S6_CSE_B.pdf"
-  },
-  {
-    "dept":"CSE",
-    "sem":4,
-    "sec":"A",
-    "uri":"PDF/S4_CSE_A.pdf"
-  },
-  {
-    "dept":"CSE",
-    "sem":4,
-    "sec":"B",
-    "uri":"PDF/S4_CSE_B.pdf"
-  },
-  {
-    "dept":"CSE",
-    "sem":1,
-    "sec":"A",
-    "uri":"PDF/S1_CSE_A.pdf"
-  },
-  {
-    "dept":"CSE",
-    "sem":1,
-    "sec":"B",
-    "uri":"PDF/S1_CSE_B.pdf"
-  },
-  {
-    "dept":"ME",
-    "sem":6,
-    "uri":"PDF/S6_ME.pdf"
-  },
-  {
-    "dept":"ME",
-    "sem":4,
-    "uri":"PDF/S4_ME.pdf"
-  }]
+[
+      {
+          "dept": "CSE",
+          "sem": "8",
+          "uri": "PDF/S8_CSE.pdf"
+      },
+      {
+          "dept": "CSE",
+          "sem": "6",
+          "uri": "PDF/S6_CSE.pdf"
+      },
+      {
+          "dept": "CSE",
+          "sem": "4",
+          "uri": "PDF/S4_CSE_A.pdf",
+          "sec": "A"
+      },
+      {
+          "dept": "CSE",
+          "sem": "4",
+          "uri": "PDF/S4_CSE_B.pdf",
+          "sec": "B"
+      },
+      {
+          "dept": "CSE",
+          "sem": "1",
+          "uri": "PDF/S1_CSE_A.pdf",
+          "sec": "A"
+      },
+      {
+          "dept": "CSE",
+          "sem": "1",
+          "uri": "PDF/S1_CSE_B.pdf",
+          "sec": "B"
+      },
+      {
+          "dept": "ECE",
+          "sem": "8",
+          "uri": "No Data"
+      },
+      {
+          "dept": "ECE",
+          "sem": "6",
+          "uri": "PDF/S6_ECE.pdf"
+      },
+      {
+          "dept": "ECE",
+          "sem": "4",
+          "uri": "PDF/S4_ECE.pdf"
+      },
+      {
+          "dept": "ECE",
+          "sem": "1",
+          "uri": "PDF/S1_ECE.pdf"
+      },
+      {
+          "dept": "ME",
+          "sem": "8",
+          "uri": "No Data"
+      },
+      {
+          "dept": "ME",
+          "sem": "6",
+          "uri": "PDF/S6_ME.pdf"
+      },
+      {
+          "dept": "ME",
+          "sem": "4",
+          "uri": "PDF/S4_ME.pdf"
+      },
+      {
+          "dept": "ME",
+          "sem": "1",
+          "uri": "PDF/S1_ME.pdf"
+      },
+      {
+          "dept": "CE",
+          "sem": "8",
+          "uri": "No Data"
+      },
+      {
+          "dept": "CE",
+          "sem": "6",
+          "uri": "PDF/S6_CE.pdf"
+      },
+      {
+          "dept": "CE",
+          "sem": "4",
+          "uri": "PDF/S4_CE.pdf"
+      },
+      {
+          "dept": "CE",
+          "sem": "1",
+          "uri": "PDF/S1_CE.pdf"
+      },
+      {
+          "dept": "EEE",
+          "sem": "8",
+          "uri": "No Data"
+      },
+      {
+          "dept": "EEE",
+          "sem": "6",
+          "uri": "PDF/S6_EEE.pdf"
+      },
+      {
+          "dept": "EEE",
+          "sem": "4",
+          "uri": "PDF/S4_EEE.pdf"
+      }
+]
