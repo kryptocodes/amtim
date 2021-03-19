@@ -11,14 +11,22 @@ const Header = () => {
         <meta name="viewport" content="width=device-width, minimum-scale=1, shrink-to-fit=no, initial-scale=1" />
         <meta httpEquiv='X-UA-Compatible' content='IE=edge'/>
         <link rel="manifest" href="/manifest.json" />
-        <link href='/images/icons/icon-72x72.png' rel='icon' type='image/png' sizes='72x72' />
-        <link href='/images/icons/icon-96x96.png' rel='icon' type='image/png' sizes='96x96' />
-        <link href='/images/icons/icon-128x128.png' rel='icon' type='image/png' sizes='128x128' />
-        <link href='/images/icons/icon-152x152.png' rel='icon' type='image/png' sizes='144x144' />
-        <link href='/images/icons/icon-152x152.png' rel='icon' type='image/png' sizes='152x152' />
-        <link href='/images/icons/icon-192x192.png' rel='icon' type='image/png' sizes='192x192' />
-        <link href='/images/icons/icon-384x384.png' rel='icon' type='image/png' sizes='384x384' />
-        <link rel='apple-touch-icon' href='/images/icons/icon-512x512.png' />
+        <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png"/>
+        <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png"/>
+        <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png"/>
+        <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png"/>
+        <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png"/>
+        <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png"/>
+        <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png"/>
+        <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png"/>
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png"/>
+        <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png"/>
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
+        <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png"/>
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
+        <link rel="manifest" href="/manifest.json"/>
+        <meta name="msapplication-TileColor" content="#000000"/>
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png"/>
         <link rel="shortcut icon" href="../images/icons/icon-72x72.png" />
         </Head>
     )
