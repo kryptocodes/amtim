@@ -23,6 +23,7 @@
     "react-responsive-modal": "^6.0.1",
     "react-select": "^4.1.0",
     "react-toastify": "^7.0.3",
-    "reactjs-pdf-reader": "^1.0.12"
+    "reactjs-pdf-reader": "^1.0.12",
+    "webpack": "^5.26.3"
   }
 }
