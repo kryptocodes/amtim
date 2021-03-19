@@ -1,6 +1,19 @@
-const withOffline = require('next-offline')
+const withPlugins = require('next-compose-plugins');
+const withOffline = require('next-offline');
 
-const nextConfig = {
+const customConfig = {
+    devIndicators: { autoPrerender: false },
+
+    webpackDevMiddleware: config => {
+        config.watchOptions = {
+            poll: 1000,
+            aggregateTimeout: 300,
+        };
+        return config
+
+    },
+
+    generateInDevMode: false,
     workboxOpts: {
         cleanupOutdatedCaches: true,
         maximumFileSizeToCacheInBytes: 5000000,
@@ -27,6 +40,9 @@ const nextConfig = {
             },
         ],
     }
-}
 
-module.exports = withOffline(nextConfig)
+};
+
+module.exports = withPlugins([
+    [withOffline],
+], customConfig);

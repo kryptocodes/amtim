@@ -47,7 +47,6 @@ const selectStyles = { menu: styles => ({ ...styles, zIndex: 999 }) };
 const Filter = selected !== "CSE" ?  Data.filter(item => item.dept === selected && item.sem == Semester)
                 : (Semester == 8 || Semester == 6) ? Data.filter(item => item.dept === selected && item.sem == Semester)  : Data.filter(item => item.dept === selected && item.sem == Semester && item.sec === Sec) ;
 const Value = Filter.map((val) => val.uri)
-console.log(Value)
 
     return (
       <Style>
