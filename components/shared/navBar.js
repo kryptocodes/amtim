@@ -27,6 +27,7 @@ const currentTab = (path) => {
   }
 
 const NavBar = () => {
+  const router = useRouter()
   const [click, setClick] = useState(false)
 
   if(click == true) {
@@ -58,6 +59,8 @@ const NavBar = () => {
               </a>
             </NextLink>
           </li>)}
+          
+          { router.pathname !== '/install' && (
           <li>
           <div className="install container-lg">
           <h2 className="text-center text-white">Install AmTim</h2>
@@ -69,7 +72,7 @@ const NavBar = () => {
           </NextLink>
           </div>
         </div>
-        </li>
+        </li> )}
         </ul>
       </div>
   )
@@ -149,7 +152,7 @@ a {
     position:absolute;
     left: 0;
     width: 100%;
-    bottom:10vh;
+    bottom:15vh;
   }
 
   .menu-icon {

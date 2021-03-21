@@ -74,7 +74,7 @@ const Installable = () => {
     useEffect(() => {
         window.addEventListener('beforeinstallprompt', e => {
             const btn = document.querySelector('#install');
-            if (window.matchMedia('(display-mode: fullscreen)').matches) {
+            if (window.matchMedia('(display-mode: standalone)').matches) {
                 btn.disabled = true;
                 btn.innerHTML = 'Already Installed';
                 return e.preventDefault();
