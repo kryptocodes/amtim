@@ -1,6 +1,7 @@
 @import url('https://cdn.staticaly.com/gh/hung1001/font-awesome-pro/8af0edd/css/all.css');
 html,
 body {
+  background-color: #FAFAFA;
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,

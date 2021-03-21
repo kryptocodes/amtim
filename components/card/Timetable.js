@@ -2,6 +2,8 @@ import React,{ useState } from 'react'
 import Select from 'react-select'
 import Data from '../data.json'
 
+import NextLink from 'next/link'
+
 import styled from '@emotion/styled'
 import ModalBox from './PDFview'
 const Timetable = () => {
@@ -99,6 +101,7 @@ h5 {
   padding-top:2rem;
   text-align: center;
 }
+
 `
 
 

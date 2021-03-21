@@ -58,6 +58,18 @@ const NavBar = () => {
               </a>
             </NextLink>
           </li>)}
+          <li>
+          <div className="install container-lg">
+          <h2 className="text-center text-white">Install AmTim</h2>
+          <div className="align-content-center d-flex justify-content-center">
+          <NextLink href="/install">
+            <button className="btn btn-lg btn-primary">
+              Install
+            </button>
+          </NextLink>
+          </div>
+        </div>
+        </li>
         </ul>
       </div>
   )
@@ -130,6 +142,16 @@ a {
     font-size:2rem;
   }
  
+  .install {
+    padding:1rem;
+    margin-bottom:1rem;
+    background-color: #000000;
+    position:absolute;
+    left: 0;
+    width: 100%;
+    bottom:10vh;
+  }
+
   .menu-icon {
     display: block;
     position: absolute;
