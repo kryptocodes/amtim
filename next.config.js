@@ -1,4 +1,6 @@
 const withPlugins = require('next-compose-plugins');
+const OptimizedImages = require('next-optimized-images');
+const withSourceMaps = require( '@zeit/next-source-maps' );
 const withOffline = require('next-offline');
 
 const customConfig = {
@@ -44,5 +46,7 @@ const customConfig = {
 };
 
 module.exports = withPlugins([
+    [withSourceMaps],
     [withOffline],
+    [OptimizedImages],
 ], customConfig);

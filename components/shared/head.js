@@ -24,10 +24,9 @@ const Header = () => {
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
         <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png"/>
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
-        <link rel="manifest" href="/manifest.json"/>
         <meta name="msapplication-TileColor" content="#000000"/>
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png"/>
-        <link rel="shortcut icon" href="../images/icons/icon-72x72.png" />
+        <link rel="shortcut icon" href="/apple-icon-72x72.png" />
         </Head>
     )
 }
